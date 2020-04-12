@@ -3,7 +3,7 @@ import "./portfolio.scss";
 class Portfolio extends React.Component {
   render() {
     return (
-      <div>
+      <div className="portfolio-container">
         <h1>Hello from Portfolio</h1>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas aut nisi perspiciatis laudantium minus aliquam dolorum sequi sunt voluptates, ad dolore quasi modi porro. Dolore quo eveniet sed laudantium ipsam.
         Nam laborum beatae quaerat iure quidem. Molestiae porro architecto facere minima expedita ut! Id eos nesciunt molestias repellat rerum corporis porro nisi quaerat, hic a libero vitae sint excepturi commodi!

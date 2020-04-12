@@ -1,0 +1,49 @@
+@import "../../assets/styles/utils/helpers/colors.scss";
+@import "../../assets/styles/utils/helpers/breakpoints.scss";
+
+
+//bg container
+.bg-container {
+  position: absolute;
+  top: 0;
+  height: 140vh;
+  width: 100%;
+  overflow: hidden;
+  .obj01 {
+    position: absolute;
+    height: 1700px;
+    width: 1700px;
+    top: -670px;
+    left: -535px;
+    background-image: url("../hero/img/hero-shape-01.svg");
+    background-color: transparent;
+    background-position: right bottom;
+    background-size: cover;
+    z-index: 900;
+  }
+  .obj02 {
+    position: absolute;
+    height: 680px;
+    width: 750px;
+    top: 100px;
+    right: -220px;
+    background-color: transparent;
+    background-image: url("../hero/img/hero-shape-02.svg");
+    background-position: left center;
+    background-size: cover;
+    z-index: 100;
+  }
+  .obj03 {
+    position: absolute;
+    background: blue;
+    height: 790px;
+    width: 790px;
+    top: -10px;
+    left: -380px;
+    background-image: url("../hero/img/hero-shape-03.svg");
+    background-color: transparent;
+    background-position: center right;
+    background-size: cover;
+    z-index: 1900;
+  }
+}
