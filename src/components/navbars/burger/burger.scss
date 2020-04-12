@@ -1,0 +1,26 @@
+@import "../../../assets/styles/utils/helpers/colors.scss";
+@import "../../../assets/styles/utils/helpers/breakpoints.scss";
+.hamburger {
+  margin-left: auto;
+  width: auto;
+  padding: 0;
+  width: 25px;
+  @include for-size(tablet-up) {
+    display: none;
+  }
+}
+.hamburger-inner {
+  width: 25px;
+  background: $nightblue;
+  &:before {
+    width: 25px;
+      background: $nightblue;
+  }
+  &:after {
+    width: 25px;
+      background: $nightblue;
+  }
+}
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: $nightblue;
+}

@@ -1,0 +1,31 @@
+  
+@mixin for-size($range) {
+    $phone-upper-boundary: 600px;
+    $tablet-portrait-upper-boundary: 900px;
+    $tablet-landscape-upper-boundary: 1200px;
+    $desktop-upper-boundary: 2560px;
+
+    @if $range==phone-only {
+        @media (min-width: #{$phone-upper-boundary - 1}) {
+            @content;
+        }
+    }
+
+    @else if $range==tablet-up {
+        @media (min-width: $tablet-portrait-upper-boundary) {
+            @content;
+        }
+    }
+
+    @else if $range==desktop-up {
+        @media (min-width: $tablet-landscape-upper-boundary) {
+            @content;
+        }
+    }
+
+    @else if $range==big-desktop-up {
+        @media (min-width: $desktop-upper-boundary) {
+            @content;
+        }
+    }
+}

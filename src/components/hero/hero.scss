@@ -1,0 +1,89 @@
+@import "../../assets/styles/utils/helpers/colors.scss";
+@import "../../assets/styles/utils/helpers/breakpoints.scss";
+
+.hero-container {
+  height: 100vh;
+  background-color: #f2f4f9;
+  background-image: url("../../assets/img/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  section {
+    margin: auto;
+    padding-bottom: 40px;
+  }
+}
+.title-intro {
+  color: $nightblue;
+  font-weight: 600;
+  font-size: 1.5em;
+  span {
+    color: $orange;
+  }
+}
+.title-main {
+  color: $nightblue;
+  font-weight: 700;
+  font-size: 1.9em;
+  @include for-size(desktop-up) {
+    font-size: 2.8em;
+  }
+}
+.title-foot {
+  color: $nightblue;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 25px;
+  opacity: 74%;
+}
+
+
+//bg container
+.bg-container {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  .obj01 {
+    position: absolute;
+    height: 1700px;
+    width: 1700px;
+    top: -670px;
+    left: -535px;
+    background-image: url('./img/hero-shape-01.svg');
+    background-color: transparent;
+    background-position: right bottom;
+    background-size: cover; 
+    z-index: 900;
+  }
+  .obj02 {
+    position: absolute;
+    height: 600px;
+    width: 700px;
+    top: 150px;
+    right: -200px;
+    background-color: transparent;
+    background-image: url('./img/hero-shape-02.svg');
+    background-position: center;
+    background-size: cover;
+    z-index: 100; 
+  }
+  .obj03 {
+    position: absolute;
+    background: blue;
+    height: 790px;
+    width: 790px;
+    top: -10px;
+        left: -380px;
+    background-image: url('./img/hero-shape-03.svg');
+    background-color: transparent;
+    background-position: center right;
+    background-size: cover; 
+    z-index: 1900;
+  }
+}
