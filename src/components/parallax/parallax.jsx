@@ -14,6 +14,12 @@ const ParallaxBackground = () => {
       <Parallax>
         <div className="obj03"></div>
       </Parallax>
+      <Parallax speed={-2}>
+        <div className="dot-obj01"></div>
+      </Parallax>
+      <Parallax speed={1}>
+        <div className="dot-obj02"></div>
+      </Parallax>
     </div>
   );
 };

@@ -1,7 +1,6 @@
 @import "../../assets/styles/utils/helpers/colors.scss";
 @import "../../assets/styles/utils/helpers/breakpoints.scss";
 
-
 //bg container
 .bg-container {
   position: absolute;
@@ -35,7 +34,6 @@
   }
   .obj03 {
     position: absolute;
-    background: blue;
     height: 790px;
     width: 790px;
     top: -10px;
@@ -45,5 +43,16 @@
     background-position: center right;
     background-size: cover;
     z-index: 1900;
+  }
+  .dot-obj01 {
+    position: absolute;
+    border: 1px solid black;
+    background-image: url("../hero/img/gray-dots-01.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    top: 360px;
+    left: 430px;
   }
 }
